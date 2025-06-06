@@ -4,7 +4,7 @@ from app.responder import responder_automatico
 
 chatbot_api = Blueprint('chatbot_api', __name__)
 
-@chatbot_api.route('/pergunta', mthods=['POST'])
+@chatbot_api.route('/pergunta', methods=['POST'])
 def responder():
     data = request.json
     pergunta = data.get('pergunta', '')
