@@ -3,7 +3,7 @@ from app.interpreter import buscar_resposta
 
 def responder_automatico(pergunta):
   try:
-    with open("data/content.txt", "r", encodig="utf-8") as f:
+    with open("data/content.txt", "r", encoding="utf-8") as f:
       texto = f.read()
   except FileNotFoundError:
       return "Erro: conteudo ainda não foi carregado."
